@@ -1,0 +1,396 @@
+\begin{thebibliography}{10}
+
+\bibitem{van2017automatic}
+Dana Van~Aken, Andrew Pavlo, Geoffrey~J Gordon, and Bohan Zhang.
+\newblock Automatic database management system tuning through large-scale
+  machine learning.
+\newblock In {\em International Conference on Management of Data}. ACM, 2017.
+
+\bibitem{herodotou2011starfish}
+Herodotos Herodotou, Harold Lim, Gang Luo, Nedyalko Borisov, Liang Dong,
+  Fatma~Bilgen Cetin, and Shivnath Babu.
+\newblock Starfish: A self-tuning system for big data analytics.
+\newblock In {\em Conference on Innovative Data Systems Research}, 2011.
+
+\bibitem{xu2015hey}
+Tianyin Xu, Long Jin, Xuepeng Fan, Yuanyuan Zhou, Shankar Pasupathy, and Rukma
+  Talwadker.
+\newblock Hey, you have given me too many knobs!: understanding and dealing
+  with over-designed configuration in system software.
+\newblock In {\em Foundations of Software Engineering}, 2015.
+
+\bibitem{zhu2017optimized}
+Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai.
+\newblock Optimized cost per click in taobao display advertising.
+\newblock {\em arXiv preprint}, 2017.
+
+\bibitem{alipourfard2017cherrypick}
+Omid Alipourfard, Hongqiang~Harry Liu, Jianshu Chen, Shivaram Venkataraman,
+  Minlan Yu, and Ming Zhang.
+\newblock Cherrypick: Adaptively unearthing the best cloud configurations for
+  big data analytics.
+\newblock In {\em Symposium on Networked Systems Design and Implementation},
+  2017.
+
+\bibitem{snoek2012practical}
+Jasper Snoek, Hugo Larochelle, and Ryan~P Adams.
+\newblock Practical bayesian optimization of machine learning algorithms.
+\newblock In {\em Advances in neural information processing systems}, 2012.
+
+\bibitem{brochu2010tutorial}
+Eric Brochu, Vlad~M Cora, and Nando De~Freitas.
+\newblock A tutorial on bayesian optimization of expensive cost functions, with
+  application to active user modeling and hierarchical reinforcement learning.
+\newblock {\em arXiv preprint}, 2010.
+
+\bibitem{guo2013variability}
+Jianmei Guo, Krzysztof Czarnecki, Sven Apel, Norbert Siegmund, and Andrzej
+  Wasowski.
+\newblock Variability-aware performance prediction: A statistical learning
+  approach.
+\newblock In {\em Automated Software Engineering}, 2013.
+
+\bibitem{sarkar2015cost}
+Atri Sarkar, Jianmei Guo, Norbert Siegmund, Sven Apel, and Krzysztof Czarnecki.
+\newblock Cost-efficient sampling for performance prediction of configurable
+  systems (t).
+\newblock In {\em Automated Software Engineering}, 2015.
+
+\bibitem{nair17}
+Vivek Nair, Tim Menzies, Norbert Siegmund, and Sven Apel.
+\newblock Faster discovery of faster system configurations with spectral
+  learning.
+\newblock {\em Automated Software Engineering}, 2017.
+
+\bibitem{nair2017using}
+Vivek Nair, Tim Menzies, Norbert Siegmund, and Sven Apel.
+\newblock Using bad learners to find good configurations.
+\newblock In {\em Foundations of Software Engineering}. ACM, 2017.
+
+\bibitem{guo2017data}
+Jianmei Guo, Dingyu Yang, Norbert Siegmund, Sven Apel, Atrisha Sarkar, Pavel
+  Valov, Krzysztof Czarnecki, Andrzej Wasowski, and Huiqun Yu.
+\newblock Data-efficient performance learning for configurable systems.
+\newblock {\em Empirical Software Engineering}, pages 1--42, 2017.
+
+\bibitem{zuluaga2016varepsilon}
+Marcela Zuluaga, Andreas Krause, and Markus P{\"u}schel.
+\newblock $\varepsilon$-pal: an active learning approach to the multi-objective
+  optimization problem.
+\newblock {\em Journal of Machine Learning Research}, 2016.
+
+\bibitem{wang2016bayesian}
+Ziyu Wang, Frank Hutter, Masrour Zoghi, David Matheson, and Nando de~Feitas.
+\newblock Bayesian optimization in a billion dimensions via random embeddings.
+\newblock {\em Journal of Artificial Intelligence Research}, 2016.
+
+\bibitem{jamshidi2016uncertainty}
+Pooyan Jamshidi and Giuliano Casale.
+\newblock An uncertainty-aware approach to optimal configuration of stream
+  processing systems.
+\newblock In {\em Modeling, Analysis and Simulation of Computer and
+  Telecommunication Systems}, 2016.
+
+\bibitem{siegmund2012predicting}
+Norbert Siegmund, Sergiy~S Kolesnikov, Christian K{\"a}stner, Sven Apel, Don
+  Batory, Marko Rosenm{\"u}ller, and Gunter Saake.
+\newblock Predicting performance via automated feature-interaction detection.
+\newblock In {\em International Conference on Software Engineering}, 2012.
+
+\bibitem{wang2013searching}
+Tiantian Wang, Mark Harman, Yue Jia, and Jens Krinke.
+\newblock Searching for better configurations: a rigorous approach to clone
+  evaluation.
+\newblock In {\em Foundations of Software Engineering}, 2013.
+
+\bibitem{zuluaga2013active}
+Marcela Zuluaga, Guillaume Sergent, Andreas Krause, and Markus P{\"u}schel.
+\newblock Active learning for multi-objective optimization.
+\newblock {\em International Conference of Machine Learning}, 2013.
+
+\bibitem{chen2016sampling}
+Jianfeng Chen, Vivek Nair, Rahul Krishna, and Tim Menzies.
+\newblock Is sampling better than evolution for search-based software
+  engineering?
+\newblock {\em arXiv preprint}, 2016.
+
+\bibitem{henard2015combining}
+Christopher Henard, Mike Papadakis, Mark Harman, and Yves Le~Traon.
+\newblock Combining multi-objective search and constraint solving for
+  configuring large software product lines.
+\newblock In {\em International Conference on Software Engineering}, 2015.
+
+\bibitem{bergstra2013making}
+James Bergstra, Daniel Yamins, and David Cox.
+\newblock Making a science of model search: Hyperparameter optimization in
+  hundreds of dimensions for vision architectures.
+\newblock In {\em International Conference on Machine Learning}, 2013.
+
+\bibitem{fu2016tuning}
+Wei Fu, Tim Menzies, and Xipeng Shen.
+\newblock Tuning for software analytics: Is it really necessary?
+\newblock {\em Information and Software Technology}, 2016.
+
+\bibitem{fufse17}
+Wei Fu and Tim Menzies.
+\newblock Easy over hard: A case study on deep learning.
+\newblock In {\em Foundations of Software Engineering}. ACM, 2017.
+
+\bibitem{fu2016differential}
+Wei Fu, Vivek Nair, and Tim Menzies.
+\newblock Why is differential evolution better than grid search for tuning
+  defect predictors?
+\newblock {\em arXiv preprint arXiv:1609.02613}, 2016.
+
+\bibitem{tantithamthavorn2016automated}
+Chakkrit Tantithamthavorn, Shane McIntosh, Ahmed~E Hassan, and Kenichi
+  Matsumoto.
+\newblock Automated parameter optimization of classification techniques for
+  defect prediction models.
+\newblock In {\em International Conference on Software Engineering}. IEEE,
+  2016.
+
+\bibitem{agrawal2016wrong}
+Amritanshu Agrawal, Wei Fu, and Tim Menzies.
+\newblock What is wrong with topic modeling?(and how to fix it using
+  search-based se).
+\newblock {\em arXiv preprint}, 2016.
+
+\bibitem{venkataraman2016ernest}
+Shivaram Venkataraman, Zongheng Yang, Michael~J Franklin, Benjamin Recht, and
+  Ion Stoica.
+\newblock Ernest: Efficient performance prediction for large-scale advanced
+  analytics.
+\newblock In {\em Symposium on Networked Systems Design and Implementation},
+  2016.
+
+\bibitem{yadwadkar2017selecting}
+Neeraja~J. Yadwadkar, Bharath Hariharan, Joseph~E. Gonzalez, Burton Smith, and
+  Randy~H. Katz.
+\newblock Selecting the best vm across multiple public clouds: A data-driven
+  performance modeling approach.
+\newblock In {\em Symposium on Cloud Computing}. ACM, 2017.
+
+\bibitem{Zhu:2017:BTP:3127479.3128605}
+Yuqing Zhu, Jianxun Liu, Mengying Guo, Yungang Bao, Wenlong Ma, Zhuoyue Liu,
+  Kunpeng Song, and Yingchun Yang.
+\newblock Bestconfig: Tapping the performance potential of systems via
+  automatic configuration tuning.
+\newblock In {\em Symposium on Cloud Computing}. ACM, 2017.
+
+\bibitem{dalibard2017boat}
+Valentin Dalibard, Michael Schaarschmidt, and Eiko Yoneki.
+\newblock Boat: Building auto-tuners with structured bayesian optimization.
+\newblock In {\em Proceedings of the 26th International Conference on World
+  Wide Web}. International World Wide Web Conferences Steering Committee, 2017.
+
+\bibitem{biedermann2014hot}
+Sebastian Biedermann, Stefan Katzenbeisser, and Jakub Szefer.
+\newblock Hot-hardening: getting more out of your security settings.
+\newblock In {\em Computer Security Applications Conference}. ACM, 2014.
+
+\bibitem{biedermann2014leveraging}
+Sebastian Biedermann, Stefan Katzenbeisser, and Jakub Szefer.
+\newblock Leveraging virtual machine introspection for hot-hardening of
+  arbitrary cloud-user applications.
+\newblock In {\em HotCloud}, 2014.
+
+\bibitem{drabik2003method}
+John Drabik.
+\newblock Method and apparatus for automatic configuration and management of a
+  virtual private network, October~8 2003.
+\newblock US Patent App. 10/460,518.
+
+\bibitem{security1}
+Hpe security research.
+\newblock \url{http://files.asset.microfocus.com/4aa5-0858/en/4aa5-0858.pdf},
+  2015.
+\newblock [Online; accessed 10-Nov-2017].
+
+\bibitem{security2}
+Real-world access control.
+\newblock
+  \url{https://www.schneier.com/blog/archives/2009/09/real-world_acce.html},
+  2009.
+\newblock [Online; accessed 10-Nov-2017].
+
+\bibitem{hill2017efficient}
+Daniel~N Hill, Houssam Nassif, Yi~Liu, Anand Iyer, and SVN Vishwanathan.
+\newblock An efficient bandit algorithm for realtime multivariate optimization.
+\newblock In {\em SIGKDD International Conference on Knowledge Discovery and
+  Data Mining}. ACM, 2017.
+
+\bibitem{wang2016beyond}
+Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi~Chang, and
+  Qiaozhu Mei.
+\newblock Beyond ranking: Optimizing whole-page presentation.
+\newblock In {\em International Conference on Web Search and Data Mining}. ACM,
+  2016.
+
+\bibitem{Siegmund2015}
+Norbert Siegmund, Alexander Grebhahn, Sven Apel, and Christian K\"{a}stner.
+\newblock Performance-influence models for highly configurable systems.
+\newblock In {\em Foundations of Software Engineering}. ACM, 2015.
+
+\bibitem{shen2006fast}
+Yirong Shen, Matthias Seeger, and Andrew~Y Ng.
+\newblock Fast gaussian process regression using kd-trees.
+\newblock In {\em Advances in neural information processing systems}, 2006.
+
+\bibitem{krall2015gale}
+Joseph Krall, Tim Menzies, and Misty Davies.
+\newblock Gale: Geometric active learning for search-based software
+  engineering.
+\newblock {\em IEEE Transactions on Software Engineering}, 2015.
+
+\bibitem{breiman1984classification}
+Leo Breiman, Jerome~H Friedman, Richard~A Olshen, and Charles~J Stone.
+\newblock {\em Classification and regression trees}.
+\newblock Wadsworth \& Brooks/Cole Advanced Books \& Software, 1984.
+
+\bibitem{zhang2007moea}
+Qingfu Zhang and Hui Li.
+\newblock Moea/d: A multiobjective evolutionary algorithm based on
+  decomposition.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, 2007.
+
+\bibitem{hoffman2014modular}
+Matthew~W Hoffman and Bobak Shahriari.
+\newblock Modular mechanisms for bayesian optimization.
+\newblock In {\em NIPS Workshop on Bayesian Optimization}, pages 1--5.
+  Citeseer, 2014.
+
+\bibitem{bergstra2011algorithms}
+James~S Bergstra, R{\'e}mi Bardenet, Yoshua Bengio, and Bal{\'a}zs K{\'e}gl.
+\newblock Algorithms for hyper-parameter optimization.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2011.
+
+\bibitem{harman2009search}
+Mark Harman, S~Afshin Mansouri, and Yuanyuan Zhang.
+\newblock Search based software engineering: A comprehensive analysis and
+  review of trends techniques and applications.
+\newblock {\em Department of Computer Science, King’s College London, Tech.
+  Rep. TR-09-03}, 2009.
+
+\bibitem{sarro2016multi}
+Federica Sarro, Alessio Petrozziello, and Mark Harman.
+\newblock Multi-objective software effort estimation.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering}, pages 619--630. ACM, 2016.
+
+\bibitem{chen2017beyond}
+Jianfeng Chen, Vivek Nair, and Tim Menzies.
+\newblock Beyond evolutionary algorithms for search-based software engineering.
+\newblock {\em arXiv preprint}, 2017.
+
+\bibitem{golovin2017google}
+Daniel Golovin, Benjamin Solnik, Subhodeep Moitra, Greg Kochanski, John Karro,
+  and D~Sculley.
+\newblock Google vizier: A service for black-box optimization.
+\newblock In {\em International Conference on Knowledge Discovery and Data
+  Mining}. ACM, 2017.
+
+\bibitem{shahriari2016taking}
+Bobak Shahriari, Kevin Swersky, Ziyu Wang, Ryan~P Adams, and Nando De~Freitas.
+\newblock Taking the human out of the loop: A review of bayesian optimization.
+\newblock {\em Proceedings of the IEEE}, 104(1):148--175, 2016.
+
+\bibitem{rasmussen2004gaussian}
+Carl~Edward Rasmussen.
+\newblock Gaussian processes in machine learning.
+\newblock In {\em Advanced lectures on machine learning}, pages 63--71.
+  Springer, 2004.
+
+\bibitem{su2006fast}
+Jiang Su and Harry Zhang.
+\newblock A fast decision tree learning algorithm.
+\newblock In {\em AAAI Conference on Artificial Intelligence}, 2006.
+
+\bibitem{domingos2000mining}
+Pedro Domingos and Geoff Hulten.
+\newblock Mining high-speed data streams.
+\newblock In {\em Proceedings of the sixth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 71--80. ACM, 2000.
+
+\bibitem{deb2002fast}
+Kalyanmoy Deb, Amrit Pratap, Sameer Agarwal, and TAMT Meyarivan.
+\newblock A fast and elitist multiobjective genetic algorithm: Nsga-ii.
+\newblock {\em IEEE transactions on evolutionary computation}, 2002.
+
+\bibitem{oh2017finding}
+Jeho Oh, Don Batory, Margaret Myers, and Norbert Siegmund.
+\newblock Finding near-optimal configurations in product lines by random
+  sampling.
+\newblock In {\em Foundations of Software Engineering}, 2017.
+
+\bibitem{wang2016practical}
+Shuai Wang, Shaukat Ali, Tao Yue, Yan Li, and Marius Liaaen.
+\newblock A practical guide to select quality indicators for assessing
+  pareto-based search algorithms in search-based software engineering.
+\newblock In {\em International Conference on Software Engineering}, 2016.
+
+\bibitem{van1999multiobjective}
+David~Allen Van~Veldhuizen.
+\newblock Multiobjective evolutionary algorithms: Classifications, analyses,
+  and new innovations.
+\newblock Technical report, 1999.
+
+\bibitem{coello2004study}
+Carlos A~Coello Coello and Margarita~Reyes Sierra.
+\newblock A study of the parallelization of a coevolutionary multi-objective
+  evolutionary algorithm.
+\newblock In {\em Mexican International Conference on Artificial Intelligence},
+  2004.
+
+\bibitem{mittas13}
+N.~Mittas and L.~Angelis.
+\newblock Ranking and clustering software cost estimation models through a
+  multiple comparisons algorithm.
+\newblock {\em IEEE Transactions on Software Engineering}, 39, 2013.
+
+\bibitem{efron93}
+B.~Efron and R.~J. Tibshirani.
+\newblock {\em {An Introduction to the Bootstrap}}.
+\newblock CRC, 1993.
+
+\bibitem{shepperd12a}
+Martin~J. Shepperd and Steven~G. MacDonell.
+\newblock Evaluating prediction systems in software project estimation.
+\newblock {\em Information {\&} Software Technology}, 54(8):820--827, 2012.
+
+\bibitem{kampenes07}
+Vigdis~By Kampenes, Tore Dyb{\aa}, Jo~Erskine Hannay, and Dag I.~K. Sj{\o}berg.
+\newblock A systematic review of effect size in software engineering
+  experiments.
+\newblock {\em Information {\&} Software Technology}, 49(11-12):1073--1086,
+  2007.
+
+\bibitem{Kocaguneli2013:ep}
+Ekrem Kocaguneli, Thomas Zimmermann, Christian Bird, Nachiappan Nagappan, and
+  Tim Menzies.
+\newblock {Distributed development considered harmful?}
+\newblock In {\em Proceedings - International Conference on Software
+  Engineering}, pages 882--890, 2013.
+
+\bibitem{scikit-learn}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel,
+  Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron
+  Weiss, Vincent Dubourg, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock {\em Journal of Machine Learning Research}, 2011.
+
+\bibitem{SSA15}
+Janet Siegmund, Norbert Siegmund, and Sven Apel.
+\newblock Views on internal and external validity in empirical software
+  engineering.
+\newblock In {\em International Conference on Software Engineering}. IEEE,
+  2015.
+
+\bibitem{me12d}
+Tim Menzies, Andrew Butcher, David Cok, Andrian Marcus, Lucas Layman, Forrest
+  Shull, Burak Turhan, and Thomas Zimmermann.
+\newblock Local versus global lessons for defect prediction and effort
+  estimation.
+\newblock {\em IEEE Transactions on Software Engineering}, 2013.
+
+\end{thebibliography}

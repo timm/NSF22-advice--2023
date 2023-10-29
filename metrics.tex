@@ -1,0 +1,64 @@
+
+\begin{table}[!t]
+\caption{Metrics for this Study.}\label{metrics}
+{\small \noindent\begin{tabular}{|R{.12\linewidth}|R{.34\linewidth}|R{.48\linewidth}|}\hline
+ \rowcolor{blue!10} Notes & Independent variables  & Dependent  variables  \\\hline
+Human-level measures & 
+\bi 
+\item Demographics about teams: size of teams; years of experience with each other; etc. 
+ \item 
+ Demographics about individuals: age, gender, racial background, veteran status, accessible challenges, years of experience with the case study being used; etc.
+\ei
+&
+\bi 
+\item Time to recognize a requirements violation in the simulation;
+\item Time to resolve that violation;
+\item Number of delayed actions per minute;
+\item  Number of forgotten  actions per minute;
+\item Number of interrupted actions per minute;
+\item Average interruption time (seconds per minutes)
+ \item Cognitive load on the human. \ei\\
+ \rowcolor{blue!10}  Domain-specific measures 
+ (different case studies may have    different domain-specific success
+criteria). & 
+For example:
+\bi 
+\item 
+Types and size (number of words) of electronic footprint available  per team member.
+\item 
+Size of requirements models; e.g. number of variables; number of constraints; 
+average constraints per variable; etc.
+\item Nature of the goal space; e.g. how many objectives; how many objectives are conflicting; etc. 
+\ei & For example:
+\bi 
+\item When delivering packages for Amazon, the goal might be 
+{\em most} packages delivered in {\em least} time by {\em fewest} drones.
+\item for emergency response groups fighting  a brush fire,
+the goals might be 
+{\em minimize} the property damage  during  simulation of a brush fire while
+also 
+{\em minimizing } the lives lost or injured during the simulation of the brush fire. \ei\\
+Domain-general measures 
+(these should apply to most case studies)
+& Amount of ``stress'' in the simulation. Recall {\em m-of-n} studies
+can be stressed in various ways such as decreasing the number of $N$ humans,
+increasing the number of $N$ drones; decreasing the required response time; increasing the number of
+problems injected into a simulation.
+&
+The following are goals for the multi-objective simulation.
+\bi 
+\item {\em  Minimizing} acceleration stress on the drone rotors ;
+\item {\em Maximize}   battery reserves when drones return to base;
+
+\item 
+{\em Acceptance metrics}:Using
+post-surveys,  capture   concerns from stakeholders about the acceptability of our final models.
+\item 
+{\em Nonhuman-y metrics}: To calibrate and baseline the ADVICE y-metrics, we collect output y values seen
+in AI tools that make all the decisions themselves, with no human involvement (e.g. FLASH, HYPEROPT and OPTUNA~\cite{bergstra2015hyperopt,nair18,akiba2019optuna});
+\item {\em Initial and final divergence metrics}:   Looking at PSO particles,
+measure  
+divergence between team members before and after inference (ideally,   difference decreases from initial to final).
+\ei\\\hline
+\end{tabular}}
+\end{table}

@@ -1,0 +1,45 @@
+\begin{table}[!b]
+\small
+\begin{tabular}{|p{.98\linewidth}|}\hline
+\rowcolor{blue!5}
+ {\ITS{0}} builds a binary tree of clusters from    $X$ examples. The {\em diversity} $D$ parts of that tree is the sum of the diversity of the $x_i$ columns  in that subset (for numerics and symbolics,  this is
+ variance and entropy, respectively).\\ 
+ The diversity of subtrees
+$t_1,t_2$ is $D(t_1)+D(t_2)$. 
+  {\ITS{0}} asks   questions
+ about {\em most divisive} splits; i.e.the  largest splits with lowest diversity.\\
+\rowcolor{blue!5}  {\ITS{0}}   asks about features that pass   {\em feature selection};
+ i.e.   those  most distinguish       two sibling  splits.
+ \\
+ After asking the user  what   $x_i$ values they prefer, 
+ {\ITS{0}} deletes the less preferred  half, then
+ loops to the  next most divisive   split (stopping s when $N=|X|$ options has been reduced to $n=\sqrt{N}$).
+ Importantly, it does so with zero calls to $f$
+ (though it has had to ask the user a few questions about some $x_i$ features).\\
+ \rowcolor{blue!5}These   $n$ values are  further  pruned by a   post-processor 
+   that (a) finds two distant $a,b$  vectors; (b)  runs $f$ to find the   $a$ and $b$; (b) recurses on    half the data nearest the best of  $a$ and $b$ value (stopping when at $\sqrt{n}$ of the data).
+   \\ 
+    To decide which of $a$ and $b$, we apply the Zitzler~\cite{zit02}
+   continuous domination predictor to the $y$ values of those vectors.
+   This  predicate   favors  
+$a$ over $b$  model if jumping from $a$ ``loses'' most:
+ \begin{equation}
+ \label{eq:cdom}
+     \begin{array}{|l|c|r|}\hline
+        \textit{worse}(a,b) =\textit{loss}(A,B) > \textit{loss}(a,b) &
+        \textit{loss}(a,b)=\sum_{j=1}^n -e^{\Delta(j,a,b,n)}/n   &
+        \Delta(j,a,y,n)=w_j(y_j^a  -  y_j^b)/n\\\hline
+   \end{array}
+    \end{equation}
+where ``$n$'' is the number of objectives and $w_j\in \{-1,1\}$ depending on whether we seek to maximize goal $x_j$ and $o_{j,A}, o_{j,B}$ are the scores seen for objective $o_j$ for $A,B$, respectively.
+  Zitzler   preferred ``boolean domination'' (one thing is better than another if it is no worse on any criteria and better on at least one criterion) since, it is known that boolean domination can  fail for three or more goals~\cite{Wagner:2007, Sayyad:2013}.
+   \\    \rowcolor{blue!5}  Post-processor needs $2log_2(n)$ calls to find
+   $\sqrt{\sqrt{N}}$ options that   survived   the tree pruning
+   {\em and} the post-processing.\\\hline
+ \end{tabular}
+ \caption{\ITS{0} automatically finds cues that guide to better solutions.
+  Later in this proposal, we will
+assess the value of (a)~automatically finding cues
+versus (b)~surveying humans to find their cues.
+}\label{advice1}
+\end{table}

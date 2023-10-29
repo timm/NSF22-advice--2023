@@ -1,0 +1,44 @@
+\begin{table}[]
+\centering
+\scriptsize
+\caption{Optimizing just for fairness.  
+Change in  Recall and False alarm before and after bias mitigation. Gray= improvement; black= damage.}
+\label{tbl:fairness_cost}
+\begin{tabular}{|l|c|c|r|r|r|r|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\cellcolor[HTML]{C0C0C0} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}Recall} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}False alarm} \\ \cline{4-7} 
+\rowcolor[HTML]{C0C0C0} 
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Algorithm} & \multicolumn{1}{l|}{\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Dataset}} & \multicolumn{1}{l|}{\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Protected \\ Attribute\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Before} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}After} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Before} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}After} \\ \hline
+\multicolumn{1}{|c|}{} &  & Sex & 0.83 & \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} 0.83} & 0.34 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.43} \\ \cline{3-7} 
+\multicolumn{1}{|c|}{} & \multirow{-2}{*}{Adult} & Race & 0.83 & \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} 0.83} & 0.34 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.35} \\ \cline{2-7} 
+\multicolumn{1}{|c|}{} &  & Sex & 0.60 & 0.60 & \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} 0.27} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.29} \\ \cline{3-7} 
+\multicolumn{1}{|c|}{} & \multirow{-2}{*}{Compas} & Race & 0.62 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.61} & \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} 0.27} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.34} \\ \cline{2-7} 
+\multicolumn{1}{|c|}{} &  & Sex & 0.70 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.69} & \cellcolor[HTML]{FFFFFF}0.66 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.77} \\ \cline{3-7} 
+\multicolumn{1}{|c|}{\multirow{-6}{*}{Reweighing}} & \multirow{-2}{*}{German} & Age & 0.70 & \cellcolor[HTML]{C0C0C0}0.71 & \cellcolor[HTML]{FFFFFF}0.66 & \cellcolor[HTML]{C0C0C0}0.25 \\ \hline
+ &  & Sex & 0.83 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.76} & \cellcolor[HTML]{FFFFFF}0.34 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.35} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Adult} & Race & 0.83 & 0.83 & \cellcolor[HTML]{FFFFFF}0.34 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.37} \\ \cline{2-7} 
+ &  & Sex & 0.60 & 0.60 & \cellcolor[HTML]{FFFFFF}0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.29} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Compas} & Race & 0.62 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.65} & \cellcolor[HTML]{FFFFFF}0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.29} \\ \cline{2-7} 
+ &  & Sex & 0.70 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.69} & \cellcolor[HTML]{FFFFFF}0.66 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.36} \\ \cline{3-7} 
+\multirow{-6}{*}{\begin{tabular}[c]{@{}l@{}}Optimized \\ Pre-\\ processing\end{tabular}} & \multirow{-2}{*}{German} & Age & 0.70 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.68} & \cellcolor[HTML]{FFFFFF}0.66 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.58} \\ \hline
+ &  & Sex & 0.82 & \cellcolor[HTML]{C0C0C0}0.83 & 0.35 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.42} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Adult} & Race & 0.82 & 0.82 & 0.35 & 0.35 \\ \cline{2-7} 
+ &  & Sex & 0.60 & 0.60 & 0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.28} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Compas} & Race & 0.60 & 0.60 & 0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.28} \\ \cline{2-7} 
+ &  & Sex & 0.70 & \cellcolor[HTML]{C0C0C0}0.75 & 0.66 & \cellcolor[HTML]{C0C0C0}0.61 \\ \cline{3-7} 
+\multirow{-6}{*}{\begin{tabular}[c]{@{}l@{}}Adversial\\ Debiasing\end{tabular}} & \multirow{-2}{*}{German} & Age & 0.70 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.69} & 0.50 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.72} \\ \hline
+ &  & Sex & 0.83 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.24} & 0.34 & \cellcolor[HTML]{C0C0C0}0.05 \\ \cline{3-7} 
+ & \multirow{-2}{*}{Adult} & Race & 0.83 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.28} & 0.34 & \cellcolor[HTML]{C0C0C0}0.04 \\ \cline{2-7} 
+ &  & Sex & 0.62 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.97} & 0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.89} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Compas} & Race & 0.62 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.68} & 0.27 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.38} \\ \cline{2-7} 
+ &  & Sex & 0.70 & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} 0.96} & 0.66 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.95} \\ \cline{3-7} 
+\multirow{-6}{*}{\begin{tabular}[c]{@{}l@{}}Reject\\ Option\end{tabular}} & \multirow{-2}{*}{German} & Age & 0.70 & 0.70 & 0.66 & 0.66 \\ \hline
+ &  & Sex & 0.83 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.78} & 0.39 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.40} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Adult} & Race & 0.83 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.78} & 0.39 & \cellcolor[HTML]{C0C0C0}0.35 \\ \cline{2-7} 
+ &  & Sex & 0.65 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.63} & 0.38 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.40} \\ \cline{3-7} 
+ & \multirow{-2}{*}{Compas} & Race & 0.65 & 0.65 & 0.38 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.39} \\ \cline{2-7} 
+ &  & Sex & 0.74 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.72} & 0.20 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.33} \\ \cline{3-7} 
+\multirow{-6}{*}{\begin{tabular}[c]{@{}l@{}}FLASH\\ optimizes for\\ AOD \& EOD\end{tabular}} & \multirow{-2}{*}{German} & Age & 0.74 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.68} & 0.20 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 0.45} \\ \hline
+\end{tabular}
+\end{table}

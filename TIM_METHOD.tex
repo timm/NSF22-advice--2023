@@ -1,0 +1,561 @@
+\section{Methods}\label{rqs}
+
+ The next section describes our research questions.
+Before that, we offer the details that   enable
+the exploration of those questions.  
+Please
+note that, in the following,
+the design of any experiments with humans  will first be reviewed (and possibly modified)  by the NCState Investigator Review Board (IRB).
+
+\subsection{Data Collection Methods}\label{collect}
+
+To answer these questions,  we will get teams of people to:
+\bi
+\item Review a model looking for some bugs (which we would introduce prior that experiment).
+\item Modify a model to handle some new requirements. 
+\item Make decisions within a model in order to optimize the outputs.
+\ei
+For the last task, results from a human-in-the-loop analysis will be compared to a fully
+automated solution. 
+Lustosa's   literature review~\cite{lustosa21} determined that, as of 2021,    
+FLASH and HYPEROPT and OPTUNA~\cite{bergstra2015hyperopt,nair18,akiba2019optuna} where
+appropriate state-of-the-art optimizers suitable for such a comparison. We would watch the literature,
+looking for new highwater marks in optimization, and apply those.
+
+As to how humans can gain advice on what connects to what inside a model,
+Cohen advises in his textbook ``Empirical AI''~\cite{Cohen95} that it is prudent
+to compare supposedly sophisticated algorithms against  
+a simpler ``straw system''. For our ``straw'', we would offer humans a simpler browser to a simple GUI showing the models and arcs in our feature models (plus a search box so users can find specific terms).
+
+Apart from that simple GUI, we would  offer humans a range of tools
+that offer advice on what variables are most/least impactful inside a model 
+(and humans will be free to accept, or ignore that guidance).
+A 2021 literature review by Lustosa~\cite{lustosa21} concluded that an
+   interactive Search-Based  tool  by Araujo et al.~\cite{araujo2017architecture}
+would be an appropriate baseline for comparison (for more on this systems, see {\em Related Work}, below).
+Before and after using these tools, humans would take a questionnaire that:
+\bi
+\item Assesses their initial background   and familiarity with the domain of the model;
+\item
+Collect their final
+views on how good (or bad) where the  results obtained with that model.
+\ei 
+Apart from structured questionnaires, we would also run think-aloud sessions where researchers would allow participants to offer comments in any aspect   at all.
+
+One important methodological point   is that, to avoid experimental
+or confirmation bias, when   subjects work    tools, they must not know if they are working with
+{\ITTT} or tools from another   group. 
+
+
+ 
+  
+  
+ 
+
+ \subsection{ Evaluation Methods }
+This proposal explores different designs for an iSBSE with the goal of let a \underline{\bf broad}
+audience explore \underline{\bf many} 
+models to find \underline{\bf better} solutions
+with \underline{\bf least} effort that are more \underline{\bf acceptable} to   more people.  
+
+
+ \underline{\bf What is ``MANY MODELS?''}: 
+ In our prior work assessing SBSE and iSBSE algorithms~\cite{lustosa21,lustosa22,nair18,Nair2016,jchen19}
+ we have found ready access to  10+ models per paper (on effort estimation, agile project planning,
+ waterfall project planning, various configuration models, etc.) to evaluate our methods.
+    More than that, another way to explore many models is to take an existing model
+    and to mutate it such its size increases (measured in terms of number of nodes), 
+    or its complexity increases (measured in terms of number of constraints per node)
+    or both. We have used such model mutators in prior papers~\cite{lustosa21}.
+    
+One practical note: in prior work we found that the limiting factor for this kind
+of evaluation is can we find models that humans feel they can comment on. This
+issue will have to be carefully explored as part of this work but, for now, we note
+that many   models we can access have concepts that many humans   can comment on. E.G.
+\bi
+\item For a model describing the organization of software projects,
+engineers could comment on:  (a)~how many developers need to work together; or
+(b)~how to handle high priority tasks within a tight deadline?
+\item For a model for on-line shopping:  (a)~what permissions are best for access to past transactions;
+(b)~what regress is needed for shoppers such that accidental or fraudulent purchases can be reversed?
+\item For a model for predicting recidivism (i.e. probability of repeating  past criminal behavior),
+is the model generating similar false positives from African Americans as for Caucasians?
+\ei
+In the following section will refer to this     question as an example
+of    a social justice issue.
+
+ \underline{\bf What is a ``BROAD AUDIENCE?''}: 
+  For many reasons, we believe we can assess {\ITTT}
+ using   a wide range of  individuals.
+%  There are hundreds of models like Figure~\ref{fig:scrumModel} available on the internet (both from on-line model repos and the hundreds of papers that explore model-based reasoning using feature models). These models must be matched to the interests and area of expertise of human stakeholders but
+%  in the past we have not had problems with that matching~\cite{lustosa21,lustosa22,nair18,Nair2016,jchen19}.
+ Both co-PIs teach large
+ undergraduate and graduate classes at NC State. Both co-PIs have experience
+ working with our local IRB (investigator review boards) to design
+ human experiments that conform to established standard of fairness and privacy.
+ Further, looking beyond using students as ``lab rats'', both co-PIs have extensive industrial connections which they can use for this work to obtain
+ case-study  subjects. For example, co-PI Kuttal has just published an extensive industrial case study~\cite{XXX}  of XXX IT professionals working in YY companies.    
+ 
+ 
+
+One reason to believe that we will be able to find enough people for this work is that none of those people have to be present at the same place at the same time. If we could convince our human subjects to make all the comments and model extensions as (say) Github comments and pull requests, then we would ready access
+ to the historical record of decisions mentioned in 
+ Table~\ref{info}.
+
+ 
+ 
+
+ \underline{\bf What is ``LEAST EFFORT?''}:
+ Given access to teams of people working on numerous models,
+we can evaluate this work asking different groups to work with different models such as {\ITTT} or
+traditional iSBSE
+methods.
+As said above, we will get teams
+to modify, debug, or apply
+a set of models in an environment where they can access a variety of tools, including {\ITTT} and {\ITS{0}}, manual browsing tools,
+and iSBSE tools from other researchers.  The clock time to complete tasks will be collected. We will declare {\ITTT} useful
+if it results in better and more acceptable models,
+in less time.
+ 
+\underline{\bf What are ``ACCEPTABLE SOLUTIONS?''}:
+We take care to distinguish two kinds 
+of   solutions:
+\bi
+\item ``Better'' solutions
+are judged according
+to the terms within a  model.
+For example, a model might judge that  
+ {\em better}
+solutions are more cost-effective  where
+``cost'' and ``effect'' and defined
+within that model.
+\item  ``Acceptable'' solutions, 
+on the other hand, are judged on a broader criteria
+that may not appear in a model. 
+For example, cost-effective solutions
+would be  unacceptable if a social justice
+advocate    argue
+ that society has a duty of care to expend
+ resources on those-in-need (not matter what the expense).
+ \ei
+ ``Acceptable'' will be measured by  exit questionnaires were users will be asked to express   approval (or disapproval) of the results of the above process.
+
+Another measure of ``acceptable''
+will be to show users solutions  generated from   used,fixed, or updated within these experiments. 
+Lustosa reports a procedure for this~\cite{lustosa21}. Given N method for optimizing a model (e.g. {\ITTT} or the iSBSE procedure from   Araujo et al.~\cite{araujo2017architecture}), Lustosa recommends asking 
+subjects to rank pairs of 
+optimization decisions
+(displayed in a random order,
+so participants cannot predict which solution comes from which tool).  Users can declare
+that neither result is acceptable, or that
+ these two results contain insufficient information to judge ``acceptability''.
+ 
+ 
+ \underline{\bf What are ``BETTER SOLUTIONS?''}:
+While
+ ``acceptable'' solutions
+  are judged according subjective
+criteria from   stakeholders,
+in this proposal, we say that 
+``better'' solutions   are judged   by the $y$ objective
+scores seen when models are run using
+the decisions from our stakeholders
+
+There is a rich literature in the SBSE
+community on how to judge  ``better''.
+For example, the following nodes come
+from  Li et al.'s recent
+IEEE TSE 2021 paper~\cite{li20}. 
+ When working with multiple stakeholders, its prudent to assume that they will
+ have many goals, some of which can achieved only by ``trading off'' other goals.
+In such a goal space, no single solution may be ``best''. Rather, many solutions will be unacceptable
+and the survivors will form a ``Pareto front'' of possibilities. 
+More precisely, 
+for two solutions $\mathbf{a}, \mathbf{b} \in Z$
+($Z \subset \mathbb{R}^m$, where $m$ denotes the number of objectives),
+solution $\mathbf{a}$ is said to \textit{weakly dominate} $\mathbf{b}$
+(denoted as $\mathbf{a}\preceq \mathbf{b}$)
+if $\mathbf{a}_i \leq \mathbf{b}_i$ for $1 \leq i \leq m$.
+If there exists at least one objective $j$ on which $\mathbf{a}_j < \mathbf{b}_j$,
+we say that $\mathbf{a}$ \textit{dominates} $\mathbf{b}$ (denoted as $\mathbf{a}\prec \mathbf{b}$).
+A solution $\mathbf{a} \in Z$ is called \textit{Pareto optimal}
+if there is no $\mathbf{b} \in Z$ that dominates $\mathbf{a}$.
+ The set of all Pareto optimal solutions of a multi-objective optimization problem is called its \textit{Pareto front}.
+Based on their reading of the SE
+literature, Table~9 of Li et al.~\cite{li20} lists 12   indicators used to evaluate such Pareto-based
+reasoning and note that   in the literature, there is no clear consensus on how to select between these different indicators. Hence,
+ Li et al. argue that domain criteria should be used to select
+an appropriate indicator. 
+For example,
+reading their text, it would seem that 
+  CI (the {\em contribution indicator}) is most appropriate for our work.
+Li et al. comment that  CI is useful when trying to know the relative quality between treatments (e.g. {\ITS{0}} vs {\ITTT}).
+CI 
+calculates the ratio of the solutions of a set that are not dominated by any solution in the other set. 
+Given two sets $\mathbf{A}$ and $\mathbf{B}$ from two treatments:
+
+\begin{small}
+	\begin{equation}
+	CI(\mathbf{A},\mathbf{B}) = \frac{|\mathbf{A}\cap \mathbf{B}|/2 + |\mathbf{A}_{\prec B}| + |\mathbf{A}_{\npreceq \cap \nsucc B}|}{|\mathbf{A}\cap \mathbf{B}| + |\mathbf{A}_{\prec B}| + |\mathbf{A}_{\npreceq \cap \nsucc B}| + |\mathbf{B}_{\prec A}| + |\mathbf{B}_{\npreceq \cap \nsucc A}|}
+	\label{eq:CI}
+	\end{equation} 
+	\end{small}where $\mathbf{A}_{\prec B}$ are the  solutions in $\mathbf{A}$ that dominate some solution of $\mathbf{B}$ (i.e., $\mathbf{A}_{\prec B} = \{\mathbf{a} \in \mathbf{A}| \exists \mathbf{b} \in \mathbf{B}: \mathbf{a} \prec \mathbf{b}\}$), 
+	and $\mathbf{A}_{\npreceq \cap \nsucc B}$ are the solutions in $\mathbf{A}$ that do not weakly dominate any solution in $\mathbf{B}$ and also are not dominated by any solution in $\mathbf{B}$ (i.e., $\mathbf{A}_{\npreceq \cap \nsucc B} = \{\mathbf{a} \in \mathbf{A}| \nexists \mathbf{b} \in \mathbf{B}: \mathbf{a} \preceq \mathbf{b} \vee \mathbf{b} \prec \mathbf{a}\}$). Note that {\em higher} CI values
+	are {\em better}.
+	
+
+ Having made this separation between
+ ``better'' and ``acceptable'',
+ we note that it is an open issue
+ if users will judge better solutions
+ as more acceptable, of vice versa (see
+ {\bf RQ3}, beow).
+ 
+  
+\section{Research
+Questions}
+
+
+\begin{wraptable}{r}{2.1in}
+\footnotesize
+\begin{tabular}{r|l}
+ & functionality  \\\hline
+ \ITS{1} & single stakeholder  
+  ~\cite{lustosa21,lustosa22}\\
+\ITS{2} &+ multiple stakeholders \\
+\ITS{3} & + verification  \\
+\ITS{4}  & + bias mitigation 
+\end{tabular}
+\end{wraptable} 
+This section describes the research questions
+addressed by   \ITS{1}, \ITS{2},\ITS{3}, \ITS{4}.
+As  shown in the table at right, these different systems are designed to
+(a) support teams of
+stakeholders; (b) find and fix mistaken advice; and finally (c) detect and mitigate for discriminatory bias. As mentioned in the introduction, 
+one reason to fund this proposal is that  even is some of our steps fail, we can still produce useful results. For example, even if we do not achieve \ITS{4}, at the very least
+this research would result in an new version \ITS{1}+, augmented with (e.g.) all the bias recognition tools we will develop for \ITS{4}. 
+\subsection{\ITS{1}: single stakeholder, no verification}
+\begin{formal}
+{\bf RQ1:} If an AI listens to human advice,
+will that damage the reasoning?
+\end{formal}
+If we listen less to AI and more to humans,
+does that mean we have to compromise
+our optimization goals in order to appease
+more people?
+The evidence so far is ``no''.  
+Lustosa~\cite{lustosa21,lustosa22}  compared
+their human-in-the-loops 
+results (with {\ITS{0}}) against state-of-the
+art iSBSE methods~\cite{lustosa21}
+and SBSE algorithms (that used no
+  human advice~\cite{lustosa22}).
+It was seen that:
+\bi
+\item
+Humans only
+ever commented on a small fraction of the state space (e.g. in
+Figure~\ref{fig:scrumModel},
+less than 
+20 binary questions within a space of
+128 options; i.e. less than $2^{20}\;/\;2^{128}$ of the state space
+\item
+While 
+{\ITS{0}} looked over a broader range
+of options that other methods\footnote{ Evidence for that claim: as mentioned above,
+{\ITS{0}} found better solutions than
+the prior state-of-the-art algorithms
+such   as FLASH or HYPEROPT and OPTUNA~\cite{bergstra2015hyperopt,nair18,akiba2019optuna} and 
+an iSBSE tool from  Araujo et al.~\cite{araujo2017architecture}.}.
+\ei
+Hence, {\ITS{0}}'s solutions were  both
+     acceptable to humans
+and   ``better''  (as judged by   $y$ objectives). 
+But while these results are promising, they 
+are based only on the   20+ models previous explored by Lustosa~\cite{lustosa21,lustosa22}. In this work, we would need to repeatedly ask
+{\bf RQ1} on every model explored by {\IT}
+(so {\bf RQ1} would  assessed again
+for  the \ITS{2}, \ITS{3}, \ITS{4} systems described below).
+
+{\bf Metrics to address  RQ1}: $y$-value scores (from the model) compared to stakeholder questionnaires.
+
+\subsection{\ITS{2} = \{\ITS{1} + PSO + advice from Table~\ref{info}\}}
+
+
+\begin{formal}
+{\bf RQ2:} Does extra advice of Table~\ref{info} change the conclusions made by {\ITS{0}}?
+\end{formal}
+If the methods of \S\ref{better}
+{\em do not} change the conclusions reached  by {\IT}, then we would need alternate methods for applying advice from our stakeholders' footprint to our reasoning.
+
+{\bf Metrics to address  RQ2}: Comparing
+the optimization results achieved without and without the extra advive of
+Table~\ref{info}. For those comparisons, we will take   guidance from:
+\bi
+\item Arcuri and Briand~\cite{Arcuri11} on the analysis of stochastic algorithms  (multiple trials;    different random   seeds);
+\item Shepperd and  MacDonell~\cite{SHEPPERD2012820}  on augmenting
+ non-parametric significance tests with effect size tests;
+ \item
+ Li et al.   IEEE TSE 2021 paper~\cite{li20} on   appropriate indicators for  multi-objective optimization studies.
+ \ei
+ \begin{formal}
+ {\bf RQ3:} How much advice
+ is too much?
+ \end{formal}
+ We believe that there is some ``negotiation cliff''
+after which all the tools described here
+will fail to find any consensus. 
+The discovery of the location of this negotiation cliff would tell us what are the limits to collaboration over a model. Our belief is that this would  one of the important results     arising from this research.
+
+{\bf Metrics to address  RQ3}:
+The   framework   allows to measure both the initial and final disagreement.
+To measure the  initial disagreement:
+\bi
+\item
+Take 100 terms are random from the domain.
+\item
+Submit as input to sentiment tools looking at the electronic footprint of different stakeholders.
+\item
+Count how often the same term gets the same sentiment from different stakeholders.
+\ei
+To measure, final agreement, we need to look at the final positions of the particles in the PSO:
+\bi
+\item If   particles can   find solutions acceptable to most parties, then  they will converge to a few small regions.
+\item
+ If    stakeholders are implacably opposed, then   particles from converge
+ to very different locals in $x$-space.
+\ei
+We predict that after some threshold value in the initial disagreement, there will be no final convergence.
+
+
+
+\subsection{\ITS{3} = \{\ITS{2} +  verification\}}
+Recall that one limitation with  \ITS{1} was that it accept all advice, uncritically. This
+is not recommended. As said  above, 
+humans have fixed and limited attention spans~\cite{davenport2001attention} 
+   which they  have learned to hoard and use sparingly.  
+Hence, humans  use heuristic ``short cuts'' that let 
+them satisfy the demands of their work, just enough, before rushing off to their next
+task~\cite{simon1956rational}.
+Such heuristics are essential if humans are to tackle their busy workloads but
+can lead to faulty advice. Hence we must ask:
+
+
+
+
+
+\begin{formal}
+{\bf RQ4:} How to find, and fix, mistaken advice?
+\end{formal}
+For the purposes of this work, we say
+advice is ``faulty'' if it is associated with a bug fixing change, defined as follows.
+Suppose we are   exploring
+model   for   several days (or longer); e.g.
+\bi
+\item A team must complete a complex task that requires extensive negotiation;
+\item The team is using be reviewing (or updating) old decisions (for auditing or maintenance purposes)
+\ei
+In this context, there will be two kinds of changes (changes to the models, changes to the advice):
+\bi
+\item
+Changes due to proposed enhancements 
+\item
+Other changes,  which we would call ``bug fixes''.
+Advice is 
+\underline{\bf faulty} if,      subsequently, it needs   bug fixes.
+\ei
+To answer {\bf RQ4}, we  adapt  methods from the qualitative and quantitative
+literature.  Pre-experimentally,
+we cannot say which of the following will work. That said,   the following   show that it is plausible that   fixes can be automatically
+generated, then presented to our stakeholders.
+
+\underline{\em Adapting qualitative methods:}~\cite{Easterbrook08},
+it is standard to   take advice from two people 
+and, if they cannot agree, then ask a third to resolve the dispute. In this research, we can at least partially automate that ``gang of three'' approach since our $x$ spaces will be annotated with advice from multiple stakeholders.  That is, once faulty advice is found, we can replay the flight of our particles, deleting the influence of the faulty advice, then synthesize alternative advice from the landscape around the particle.
+
+\underline{\em Adapting quantitative methods:}
+co-PI Menzies
+has been experimenting with Yu et al.~\cite{yu2019improving}  as follows.  Given a model  executed over an extended period of time,   inputs could be presented to later and older models.
+If (e.g.) Wednesday's model
+gives different output to Monday's model then that raises a red flag on all the advice from Monday to
+Wednesday. As above, we could then replay the flight of the particles, synthesize alternative advice from the landscape around the particle. 
+Using delta debugging techniques~\cite{Zeller99}, the difference in the model generated with and without the red flag advice would be something that could be presented to stakeholders for their review. 
+
+
+ {\bf Metrics to address RQ4:} Based on what we have seen in traditional software analytics,
+ we 
+ we have two expectations. (1) Faulty advice should be frequeny (otherwise, that would suggest models are not being reviews).
+ (2) The time to fix faults should have some exponential decay   where most   are fixed quickly (but a few may take comparatively much longer).
+ 
+ 
+\subsection{\ITS{4} = \{\ITS{3} +  bias mitigation\}}
+Recall that another limitation with  \ITS{1} was that
+if never checked for biased advice that 
+could lead to the problems of bias and discrimination seen in Table~\ref{tbl:sigh}. 
+This is an important issues since, when
+    human oversight fails (in the way  discussed by Ben Green in
+  \S\ref{why}) then we should
+ expect that   software reflects the goals of a few developers (and ignores the concerns of  the wider population).
+In that situation, the biases of developers can accidentally and adversely effect the users of that system.  For example, 
+ in the case of the COMPAS system discussed in Table~\ref{tbl:sigh} 
+ that system was   more likely to falsely label black defendants as future criminals at twice the rate as white defendants.
+Hence, we must ask:
+
+
+\begin{formal}
+{\bf RQ4:} How to find, and fix, advice that lead to biased decision making?
+\end{formal}
+
+% Another example of this effect is offered by Nobel~\cite{noble2018algorithms} who described a hair salon in a traditionally African American neighborhoods that went bankrupt due to bad YELP reviews.  
+% Prior to YELP, the  salon successful promoted itself    via word-of-mouth recommendations. But when   YELP become ubiquitous, the   ratings of this business plummeted since its customers made no check-ins from the salon.    
+% The owner of this hair salon told Nobel that   that ``Black people don't `check in' and let people know where there at when they sit (in the salon). They already feel like they are being hunted; they aren't going to tell `The Man' where they are.''.   Note that, like the vision system, the designers of the YELP rating scheme were unaware of   social
+% differences that effected that rating scheme.
+
+
+ 
+ Previously~\cite{Chakraborty_2020,fse21} we have had   success in bias  mitigation
+ from machine learning models, measured
+ in terms of  (e.g.) reducing the 
+  difference in the false positive between African Americans and other social groupings in
+ the COMPAS model~\cite{Machine_Bias}. The rest of this section proposes
+ adapting and extending those methods within \ITS{4}.
+ 
+ Two of those methods are (1)~{\em hyperparameter optimization}
+ and (2)~{\em sample balancing}. While useful,  both these methods have
+         a problem with ``in-the-box'' reasoning (described below).
+         Hence we also propose evaluating something  new for
+  \ITS{4}; i.e.  (3) {\em reasoning  out-of-the-box}. 
+ 
+ Before describing these three methods, we offer two clarifications.  
+ Firstly, in \ITS{4}, we would use these approaches at   different times:
+ \be
+ \item {\em Hyperparameter optimization} runs {\em near the end} of PSO, offering tweaks on   decisions made up to that point;
+ \item {\em Sample balancing} runs {\em alongside} PSO, 
+ nudging the particles to different places;
+ \item  {\em Reasoning out-of-the-box}   runs {\em before} PSO to  change the shape
+ of the problem explored by PSO.
+ \ee
+Secondly,    the following methods can only {\em mitigate}, but may not  {\em remove}, bias.
+As stated by  Nobel~\cite{noble2018algorithms} and   Gebru~\cite{gebru21} 
+(and many other writers, dating back at least to Crenshaw~\cite{crenshaw2017race}), the root cause of decision
+bias is to be found in the social and political structures that select tools favoring small groups within
+society. A complete fix for bias   needs to look
+at how we select the goals of a system, the designers of that system, and how those designers   go about listening to the people
+who use those systems. 
+
+That said, we take   inspiration from Freeman Dyson who   said
+{\em technology without morality is barbarous; morality without technology is impotent}. We agree with Dyson: 
+if 
+we are going to address issues of bias at a very large scale, then we will need some kind of automation to scale that reasoning (e.g. tools like \ITS{4}). More specifically, we seek is a ``two-way street'' between what we might call the {\em humanities view} (which is light on CS knowledge) and the {\em computer science view} (which is light on knowledge of the broader social context). For example, 
+Gebru~\cite{adams21a}
+wants regulation that ``specifically says that corporations need to show that their technologies are not harmful before they deploy them''.
+Implementing that   oversight, at a company-wide scale, would
+require many things including tools like what we propose for \ITS{4}; i.e.
+(1)~{\em hyperparameter optimization} ,  (2)~{\em sample balancing} 
+and (3)~{\em reasoning out-of-the-box}.
+  
+
+\noindent\underline{\bf 1. Hyperparameter Optimization (HPO)}: 
+ There are many choices in how a machine learner makes a model.
+ {\em Hyperparameter optimizers} are automatic tools that can    find options that 
+ improve predictive
+ performance. Also, as we showed in our FSE'20 paper~\cite{Chakraborty_2020},
+ that     process can also be used to select for   models with
+ disparities such as those reported for
+ COMPAS.
+
+ Recently, 
+ co-PI Menzies    Lustosa~\cite{lustosa22}   explored HPO using {\ITS{0}}.  
+ In the work, humans were replaced with a simple oracle that just agreed with whatever decision was ranked most important by {\ITS{0}}. 
+ They found that {\ITS{0}} out-performed state-of-the-art HPO tools 
+ (FLASH and HYPEROPT and OPTUNA~\cite{bergstra2015hyperopt,nair18,akiba2019optuna}). 
+ Accordingly,  for \ITS{4}, we would
+   revisit that FSE'20 work to  find even better HPO that remove even more disparity between social groupings. 
+
+  {\bf   Metrics to address RQ5 (HPO):} The effects of decisions
+on different social groups can be assessed via (e.g.) reducing the 
+  difference in the false positive between African Americans and other social groupings in
+ the COMPAS model~\cite{Machine_Bias}. Recently we completed a literature review~\cite{Majumder21}
+ that found 30 such bias-related metrics which, after   clustering, we could reduce to around half a dozen.   {\bf RQ5 (HPO)} would be successful
+ if   we can minimize those bias-related measures by including
+ them in the PSO optimization goals.
+ 
+\noindent\underline{\bf 2. Sample Balancing}: 
+  When bias arises from an imbalanced
+  sampling of   social groupings, then bias can be mitigated by
+  adjusting the ratios of those   groupings within the sample
+  used to build a model.
+  At  FSE'21 co-PI Menzies
+ and his student  Joymallya Chakraborty earned a distinguished paper award~\cite{fse21} 
+ for a system that extrapolated examples within under-represented social groups within the training data\footnote{Implementation note: that system adjusted frequencies in the 
+ {\em training} data and {\bf NOT} the {\em test} data.}.
+  Prior to that work, it was  feared   that repairing bias also meant damaging predictive efficacy\footnote{
+In 2017,    Berk et al.~\cite{berk2017fairness}   said
+"It is impossible to achieve fairness and high performance simultaneously (except in trivial cases".}
+But at FSE'21, we    showed that it was   possible to maintain predictive prowess while, at the same time,  reduce bias.
+
+Sample balancing could also be applied to \ITS{4}.
+We discussed above methods for {\IT}'s PSO 
+ particles to to take advice
+ on where they should travel too next. Our FSE'21  data balancing operators 
+ from  Menzies and Chakraborty could also be applied to select better directions
+ our PSO particles.
+
+   {\bf   Metrics to address RQ5 (Balancing): } 
+    This work on {\bf RQ5 (Balancing)} would be successful if     models generated here whre fairer with balancing than if balancing
+ is disabled. Here ``fairer'' would be judged using the metrics
+ mentioned above that  assessed {\bf RQ5 (HPO)}. Also, as done in our FSE'21 paper~\cite{fse21} , we would also require that these
+ fairness improvements do not come at the cost of inference performance.
+ 
+
+\noindent\underline{\bf 3. Reasonong Out-of-the-Box}: 
+While promising initial steps, {\em hyperparameter optimization}
+ and {\em sample balancing}   have   a drawback: they can only reason about  options   found ``in the box'' (i.e. within the current terms and goals of the model).
+ This is an incomplete approach since bias can come from things {\em not considered} in the current mode.  For  example,
+ Nobel~\cite{noble2018algorithms}   describes a hair salon in a   African American neighborhood that went bankrupt due to bad YELP reviews.  
+Prior to YELP, the  salon successful promoted itself    via word-of-mouth recommendations. But when   YELP become ubiquitous, the   ratings of this business plummeted since its customers made no check-ins from the salon.    
+The owner of this hair salon told Nobel that   that ``Black people don't `check in' and let people know where there at when they sit (in the salon). They already feel like they are being hunted; they aren't going to tell `The Man' where they are.''.   Note that the designers of the YELP rating scheme guilty of ``in the box'' reasoning since they
+did not reflect on how their rating system would work for diverse social groups.
+
+ 
+
+Nobel~\cite{noble2018algorithms} and Gebru~\cite{gebru21} claim that systems can become
+less biased when their design is effected by a more diverse range of opinions.
+In the following, we will test the Nobel/Gebru hypothesis.
+
+{\bf Metrics to address RQ5 (Out-of-the-Box)}: 
+Here we will teams with different levels of
+diversity to address the same model maintenance task. An exact measure of initial divergence
+will be taken using the same ``take 100 terms'' test used in {\bf RQ3}. An
+initial and final measure of model bias will be taken using the 
+metrics described above in  RQ5 (HPO). We would have confirmation of the 
+Nobel/Gebru conjecture if increaed team diversity is seen to be assocaited with greatest
+decrease in model bias (i.e. final minus initial).
+ 
+ 
+ \section{Schedule} 
+
+
+ \begin{wraptable}{r}{3.35in}
+{ \footnotesize
+\begin{tabular}{|l|l|l|l|}\cline{2-4}    
+\multicolumn{1}{c|}{~}      &\multicolumn{3}{c|}{Year} \\
+\multicolumn{1}{l|}{~}       &1 & 2 & 3  \\\hline  
+{\bf Goal2:} run faster                   &   x  &  &   \\\hline 
+{\bf Goal1:} better post-attack performance         &    x  &       &   \\\hline 
+{\bf Goal3:} test against adaptive adversaries        &      & x      &   \\\hline  
+{\bf Goal4:}  test in numerous domains                &      & x     &       \\ \hline
+{\bf Goal5:} inspect the decision boundaries           &      & x      &  x     \\ \hline
+BPC work (broadening participation in computing)  &   x &  x    & x     \\ \hline
+\end{tabular} } 
+\caption{Timetable for this work. }\label{when}
+\end{wraptable}
+Table~\ref{when} shows a three-year plan from this work.
+Note that   will explore {\bf GOAL2} first since, if successful, this will speed up everything else.
+Also,  we   explore {\bf GOAL5} last since everything up till
+then has the potential to change the generated decision boundaries.
+
+Lastly, 
+one  of the benefits of  NSF funding
+is the opportunity to work on  broadening participating in computing (BPC).  Our BPC plans are discussed in \S\ref{bpc}. As seen
+  in our timetable, BPC will be an on-going task through-out the work.

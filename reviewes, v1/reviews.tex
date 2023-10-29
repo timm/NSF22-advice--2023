@@ -1,0 +1,237 @@
+Proposal All Reviews: 2244922
+Agency Name:
+
+National Science Foundation
+
+Agency Tracking Number:
+
+2244922
+
+Organization:
+
+NSF Program:
+
+Software & Hardware Foundation
+
+PI/PD:
+
+Menzies, Timothy
+
+Application Title:
+
+SHF: Small: Does more ADVICE improve interactive Search-based Requirements Engineering?
+
+Review 1
+Rating:
+
+Multiple Rating: (Good/Fair)
+
+Review:
+Summary
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to intellectual merit.
+
+This proposal aims to develop an interactive search-based solution for helping software engineers with making decisions. The works builds on the PI's prior work that resulted in a tool called ADVICE-0. The proposal aims to advance that work through several thrusts: (1) expanding to team-based reasoning, (2) incorporating knowledge from the cloud, (3) verification of advices, and (4) mitigation of bias.
+
+Strengths:
+
++ The proposal is investigating a somewhat classical, nevertheless important problem. New and improved techniques for helping software engineers with making informed decision during the requirements engineering phase are needed.
+
++ The proposed work is likely to advance knowledge and our understanding of the means through which automation (e.g., search-based techniques) can facilitate decision making in requirements engineering
+
++ The PIs are highly qualified and have a good track record in this area
+
+Weaknesses:
+
+- The proposal is lacking details as to what and how the PIs plan to achieve some of the objectives. Other than ADVICE-1, it is not clear how the other thrusts of proposal will work and the proposed work is just too abstract to help the reviewer evaluate the plausibility of some of these ideas.
+
+For instance, in ADVICE-2, the PIs plan to somehow leverage knowledge in the cloud to facilitate decision making. First, it is not completely clear what they mean by this, but they give a couple of examples, such as text mining from available sources such as GitHub and Stack Overflow. But it is not clear how mining some information about those sources can be systematically incorporated in a meaningful way in the decision making process proposed by the PIs.
+
+Similarly, in ADVICE-3, the PIs aim to develop advice verification tools. This is a valid and extremely challenging objective. However, the proposed approach is only two paragraphs of very high-level description that barely scratches the surface on how one should go about building such tools.
+
+Finally, in ADVICE-4, the PIs aim to incorporate bias mitigation, which again is a reasonable objective, but one that is extremely challenging and worthy of its own separate proposal. The proposal does not make it clear how they'll achieve this in a generic fashion for a variety of requirements engineering settings. Again, the description is very high-level. For example, the second paragraph describing how they aim to measure bias is very terse and does not explain how they will be able to do so at all.
+
+- Evaluation of the proposed project is quite challenging and in my opinion will require industry participation. While the proposal mentions the PIs intention of working with industrial practitioners to evaluate this work, the proposal does not example who are these practitioners, how they'll work with the PI, etc. The proposal mentions availability of various models (e.g., feature models), but I am not convinced these models are at the scale necessary for this project, nor am I convinced they are that abundantly available.
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to broader impacts.
+
+According to the proposal, the broader impact of this work is on students, faculty, and industry researchers in software engineering, AI, and HCI, for the purpose of facilitating better decision making. The PIs will also incorporate material from this research in their coursework and aim to promote diversity in their activities.
+
+While the broader impacts are reasonable, they are somewhat described in a shallow way and without any specific details. I am afraid nothing specifically unique stands out.
+
+Please evaluate the strengths and
+weaknesses of the proposal with respect to any additional solicitation-specific review criteria, if
+applicable
+
+
+
+Summary Statement
+
+The proposed work aims to advance the process of decision making in requirements engineering through automated search-based techniques. Although if funded the proposed work is likely to result in interesting contributions in this space, the proposal in its current form is lacking details as to how the PIs will tackle several extremely challenging problems that they aim to solve. The proposal's broader impact is also very brief and does not contain many specific outcomes.
+
+Review 2
+Rating:
+
+Multiple Rating: (Very Good/Good)
+
+Review:
+Summary
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to intellectual merit.
+
+The intellectual merit of this proposal lies in novel methods for AI- and human-guided search-based requirements engineering. Basically the problem the proposal targets is that there are many requirements that a software program *could* implement or follow, but the optimal configuration of these requirements is very difficult to find. Different automated and partially-automated tools help developers narrow down what a program should actually do. The proposal defined requirements engineering broadly, to include design, deployment, and testing portions of the software development process. Both functional and non-functional requirements are considered. In short, the proposal seeks to optimize almost any decision-making during software development.
+
+The proposed work is based on ADVICE, the PIs' proof-of-concept for optimizing RE using (minimal) human feedback. The proposal divides the novel effort into three categories: 1) team-based input for ADVICE, 2) cloud-based input for ADVICE, 3) verification of output from ADVICE, and 4) bias mitigation in AI-guided search. The proposal brings forward different techniques for each category, namely: 1) "swarm optimization" to model each candidate solution as a "particle" in a "swarm" of solutions to more efficiently navigate the solution space, 2) text mining to help rank decisions in candidate solutions, 3) replay of model decisions, and 4) various techniques for mitigating bias described in recent literature.
+
+On the one hand, this proposal is very clear about the problem it seeks to solve and rests on a strong legacy of related and preliminary work. The idea of integrating feedback from multiple team members and even AI-enabled filtering is clearly in line with programmer needs in managing the complexity of RE for large projects. In addition, the proposed techniques each make sense for the proposed concern. Swarm optimization does make sense as an answer for optimizing the candidate solution space. Text mining does seem capable of filtering some decisions without needing human input. In addition, the PIs have a long history of work in this area and clear record of success.
+
+On the other hand, the proposal lacks clarity in several parts of the proposed work. The proposal is strongest in the area of swarm optimization (Section 3.1), where a relatively clear explanation is provided of how ADVICE can better navigate a potential solution space. The proposal's clarity weakens in subsequent sections. The text mining makes sense at a high level, but few details are provided beyond mentioing different language models and related work in e.g. sentiment analysis. The work on advice verification is, unfortunately, vague. It is not clear how the replay process is supposed to work or which "meta patterns" will really be used or how. The work on bias mitigation is also not clear, as the document makes statements such as "experiments will check how bias is effected by increasing Table 1 information", but does not expand on how the experiments will really be modified. Section 3.4 has several potentially-useful concepts, but not enough detail on how it might actually work in ADVICE.
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to broader impacts.
+
+The broader impact of the proposal lies in improved decision-making by programmers and BPC efforts by the PIs. If successful, the proposed work is likely to improve the RE process for developers over the long term. Large software projects often depend on intuition and opportunism to guide RE decisions. This proposal aims to give programmers more tools to optimize these decisions. The proposal also includes several BPC activities. The proposal even claims that the research will guide admissions procedures at the NC State CS department with diversity as a goal to optimize.
+
+Please evaluate the strengths and
+weaknesses of the proposal with respect to any additional solicitation-specific review criteria, if
+applicable
+
+
+
+Summary Statement
+
+The proposed work targets an important problem and includes several potential solutions. The proposal spreads itself thinly over these solutions, however. The proposal would be improved if ADVICE-3 and ADVICE-4 were scaled back in favor of more detail on ADVICE-1 and ADVICE-2. Bias mitigation and solution validation/filtering are certainly important topics, but it is not clear that the resources of the proposal (three years, two students) will be capable of tackling the proposed work.
+
+Review 3
+Rating:
+
+Multiple Rating: (Very Good/Good)
+
+Review:
+Summary
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to intellectual merit.
+
+SUMMARY OF PROPOSED WORK
+
+This proposal aims to build methods and techniques for incorporating human decision making into AI-assisted software engineering tools with a focus on search-based software engineering techniques. The PIs have built a preliminary system, which they call ADVICE, that incorporates human advice to help with feature selection by splitting data and asking about the most relevant data split. The PIs panned work in this proposal aims to improve upon this preliminary work by (i) Adding team-based reasoning using particle swarm optimization, (ii) adding additional knowledge from the cloud in the form of text mining and expansion, (iii) adding advice verification, and (iv) adding bias mitigation. The PIs plan an extensive set of experiments and lab studies centered around 11 research questions.
+
+COMMENTS:
+
+This proposal aims to help bring humans into the loop in order to improve AI-assisted software engineering tools. Given the rapid rise of AI-assisted tools for developers, exploring work that more closely involves human-feedback could be an important line of work, and one that bears fruit for various SE tasks. While the ideas set forth in this proposal generally seem to be sound, I had a difficult time connecting several of proposed advancements directly software engineering.
+
+Strengths:
+
++ Bringing humans in the loop of the decision-making process for AI-based systems is an important area to explore in SE research. This could help to mold models better to human processes and potentially make them more explainable or interpretable.
+
++ The PIs have implemented a preliminary version of the proposed framework that illustrates feasibility, and the plan of work advances well beyond the capabilities of the preliminary work.
+
++ the first research goal related to team decision making and particle swarm optimization is very compelling. Software development is a collaborative endeavor, and finding ways to help AI-assisted tools fit into such environments is important.
+
++ The evaluation plan and research questions are detailed and generally well-fleshed out.
+
++ The PIs combination of expertise on both the machine learning side and social aspects of engineering are complementary, and make the team well-equipped to tackle the proposed work.
+
+Weaknesses:
+
+- I had a difficult time linking the proposed work to software engineering. Much of the proposed work reads like a proposal for general machine learning research, as opposed to ML=SE research. The proposal could be considerably strengthened by tying some of the proposed techniques to SE-specific problems.
+
+- It is difficult to envision the type of interface that the proposed research will use. The PIs claim that this interface will be designed as the research evolves, however, it is difficult to tell what risk this poses to the proposal. Given the that much of the proposed work relies on a human in the loop, the interface may be a critical point for ensuring success.
+
+- The scope of work is quite ambitious for a three-year proposal.
+
+SUGGESTIONS FOR IMPROVEMENT:
+
+The proposal could be dramatically improved by more tightly tying the proposed research to software tasks and models (focusing on a single task may be best to illustrate feasibility). Additionally, specifying more details of the interface that developers and teams will be interacting with for the different proposed methods.
+
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to broader impacts.
+
+The broader impacts of this proposal lie in improving the interpretability of machine learning models that are becoming more popular in society more broadly.
+
+The PI aims to broaden participation in computing by relying on the PI's existing connections to involving women in engineering, and broadening participation in computing at the PI’s university. Additionally, the PIs aim to integrate the results of their work into systems that could help to consider representation in computer science such as the admission system of the PI’s university.
+
+
+Please evaluate the strengths and
+weaknesses of the proposal with respect to any additional solicitation-specific review criteria, if
+applicable
+
+
+
+Summary Statement
+
+This proposal aims to advance AI-assisted software engineering tools by incorporating humans into the loop to improve model quality and outcomes. While the overall premise of this proposal is quite promising, the connection to SE tasks is tenuous at times, and the proposal could benefit from a better explanation of how the work will integrate with and benefit SE practitioners.
+
+Review 4
+Rating:
+
+Fair
+
+Review:
+Summary
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to intellectual merit.
+
+The intellectual merit of this proposal is to create 4 new prototypes of the ADVICE system to reduce the number of decisions needed by stakeholders in analyzing project models (goal and feature). The four updates are for adding teams, cloud knowledge, verification, and bias mitigation.
+
+Novelty:
+To the best of my knowledge, this proposal is novel.
+
+Execution Plan & Measurement:
+The majority of the issues in this proposal are due to the unclear writing and incomplete
+descriptions of the research plan. What is the intended final use case for the system? Will it be used by requirements engineers or developers? What kinds of decisions will it assist in? One or more concrete realistic scenarios would be beneficial for understanding this proposal.
+
+There is a conflict between the computation methods proposed and the foundational requirements aspects in this proposal. The goal models collected by the PIs were created over multiple days and months as a part of in depth requirements workshops with multiple participants and trained modelers. It is unrealistic to used these models in a 2 hours study. Participants cannot internalize the purpose, motivations, and content of one of these models in under two hours to make informed decisions or update the model. This is an unrealistic requirements task.
+
+Further, i* has never been recommended for automated analysis since it lacks a logical formal foundation and is intended to be use as a model for the purpose of probing discussions with stakeholders. It appears that the PIs converted the qualitative valuations in i* to a SAT-based problem, again using the artifacts out of context.
+
+ADVICE-2 is very confusing. What is the scope and bounds of the information collected from the cloud? Who/how determines what to collect in each case study? How will consent be achieved for subjects' for their data? Are user logins required? (This seems especially problematic with students....for which the study will collect significant PII and demographics.)
+
+ADVICE-3 says good advice needs less revisions. I could easily argue that boring non-controversial advice also needs less revisions, and that the most interesting contributions on a project require revision, which would be considered untrustworthy in this scheme.
+
+In ADVICE-4, it is difficult the trust the PIs plan for bias mitigation, given the issues with ADVICE 1-3.
+
+The evaluation plan is at a high level. Which ADVICE prototypes will be tested each year and in what capacity. What kinds of tasks will each participant group be given? Will Mechanical Turk participants be given a subset of models?
+
+The abstraction of a team is individuals updating a model in series. Is this the intended final goal or an intermediate abstraction for analysis? This doesn't inform collaborative discovery.
+
+This project may be too big for a 3-year SMALL proposal. ADVICE-1 and ADVICE-2 are probably sufficient.
+
+Note: RQ11 appears to be out of scope for this work.
+
+PI Qualifications:
+The PIs are qualified to complete this work.
+
+Adequate Resources:
+The PIs have appropriate resources to conduct this investigation. The Data Management Plan and Facilities documents are both adequate.
+
+Roughly 17k of the "G. 6. Other" is not discussed in the Budget Justification. By my reading 4.5k is research incentives and 83k is graduate student tuition.
+
+Other:
+Hyperlinks and page numbers are not allowed in proposals, please remove.
+The tables in the proposal are separate text that could be examples in the narrative. It is unclear how the reader should consider them.
+Sect. 2.1 seems out of place and isn't referenced elsewhere.
+
+In the context of the five review elements, please
+evaluate the strengths and weaknesses of the proposal with respect to broader impacts.
+
+It is clear from the proposal that both PIs are actively engaged in BPC initiatives.
+The broader impacts listed require more specific descriptions of the activities. How will admissions procedures at NC State be affected by the tools created in the proposal? Will the lecture notes be updated with the use of the ADVICE or are other updates planned?
+Further, the proposal mentions the allocation of funds for students to attend Grace Hopper and Richard Tapia conferences, but this is not mentioned in the budget justification. Will budgeted travel funds be used or "Other" funds?
+
+Please evaluate the strengths and
+weaknesses of the proposal with respect to any additional solicitation-specific review criteria, if
+applicable
+
+
+
+Summary Statement
+
+This proposal extends the ADVICE system to reduce the number of decisions needed by stakeholders in analyzing project models. The ideas presented in this proposal are interesting and novel, but the research is not adequately described and there are too many open questions about critical aspects of the proposal, which need to be addressed first.
+
